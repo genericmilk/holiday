@@ -1,0 +1,35 @@
+{
+    "name": "genericmilk/holiday",
+    "description": "Easily manage, create and rollback your migrations in a user friendly dashboard",
+    "keywords": ["laravel", "database", "migrations"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Peter Day",
+            "email": "peterday.main@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Genericmilk\\Holiday\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "extra": {
+        "branch-alias": {
+            "dev-master": "3.2-dev"
+        },
+        "laravel": {
+            "providers": [
+                "Genericmilk\\Holiday\\ServiceProvider"
+            ]
+        }
+    },
+    "require-dev": {
+        "laravel/framework": "6.x.x"
+    }
+}
