@@ -9,17 +9,7 @@
         {
             $this->setupConfig(); // Load config
             $this->loadRoutesFrom(__DIR__.'/routes/web.php'); // Import routes
-
-            $this->commands([
-                Build::class
-            ]);
-
-
-            if ($this->app->runningInConsole()) {
-                $this->commands([
-                    Build::class
-                ]);
-            }
+            $this->loadViewsFrom(__DIR__.'/views', 'holiday'); // Import biews
         }
         public function register()
         {

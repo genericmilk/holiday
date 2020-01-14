@@ -1,5 +1,3 @@
 <?php
 
-Route::get('/holiday', function(){
-    return 'Hello';
-});
+Route::get('/holiday', 'Genericmilk\Holiday\Holiday@Page');
